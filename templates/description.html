@@ -14,19 +14,19 @@
    <h2>POST Routes:</h2>
    <br><p>
 <ul>
-   <li><span class="route_mark">'/add_user'</span> - Creates a new user and adds it to the users dictionary.</li>
-   <li><span class="route_mark">'/add_post'</span> - Creates a new post and adds it to the posts dictionary. If user does not exists, then  it will be created.</li>
+   <li><span class="route_mark">'/add_user'</span> - Creates a new user and adds it to the users dictionary. #{user} </li>
+   <li><span class="route_mark">'/add_post'</span> - Creates a new post and adds it to the posts dictionary. <br>If user does not exists, then  it will be created. #{author,content}</li>
 
 </ul></p><br>
    <h2>PUT Routes:</h2>
    <br><p><ul>
-   <li><span class="route_mark">'/edit_user'</span> - Renames a user in the users dictionary.</li>
-   <li><span class="route_mark">'/edit_post'</span> - Updates the content of a post in the posts dictionary.</li>
+   <li><span class="route_mark">'/edit_user'</span> - Renames a user in the users dictionary. #{user,new_name}</li>
+   <li><span class="route_mark">'/edit_post'</span> - Updates the content of a post in the posts dictionary. #{post_id,new_content}</li>
    </ul></p><br>
    <h2>DELETE Routes:</h2>
    <br><p><ul>
-   <li><span class="route_mark">'/kill_user'</span> - Deletes a user from the users dictionary.</li>
-   <li><span class="route_mark">'/kill_post'</span> - Deletes a post from the posts dictionary.</li>
+   <li><span class="route_mark">'/kill_user'</span> - Deletes a user from the users dictionary. #{user}</li>
+   <li><span class="route_mark">'/kill_post'</span> - Deletes a post from the posts dictionary. #{post_id}</li>
 </ul></p><br>
 
  </div>
