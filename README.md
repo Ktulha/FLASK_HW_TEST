@@ -6,7 +6,9 @@ GET Routes:
 
 
 '/' - Returns an HTML page using the index.html template, and passes the users and posts dictionaries as variables to the template.
+
 '/get_users' - Returns a JSON response containing the users dictionary.
+
 '/get_posts' - Returns a JSON response containing the posts dictionary.
 
 POST Routes:
