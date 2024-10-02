@@ -1,0 +1,32 @@
+<div class="description">
+  <h2> Here is the complete list of app routes:</h2>
+<br>
+   <h2>GET Routes:</h2>
+   <p>
+     <ul>
+       <br>
+   <li><span class="route_mark">'/'</span> - Returns an HTML page using the index.html template, and passes the users and posts dictionaries as variables to the template.</li>
+   <li><span class="route_mark">'/get_users'</span> - Returns a JSON response containing the users dictionary.</li>
+   <li><span class="route_mark">'/get_posts'</span> - Returns a JSON response containing the posts dictionary.</li>
+     </ul>
+ </p><br>
+ 
+   <h2>POST Routes:</h2>
+   <br><p>
+<ul>
+   <li><span class="route_mark">'/add_user'</span> - Creates a new user and adds it to the users dictionary.</li>
+   <li><span class="route_mark">'/add_post'</span> - Creates a new post and adds it to the posts dictionary. If user does not exists, then  it will be created.</li>
+
+</ul></p><br>
+   <h2>PUT Routes:</h2>
+   <br><p><ul>
+   <li><span class="route_mark">'/edit_user'</span> - Renames a user in the users dictionary.</li>
+   <li><span class="route_mark">'/edit_post'</span> - Updates the content of a post in the posts dictionary.</li>
+   </ul></p><br>
+   <h2>DELETE Routes:</h2>
+   <br><p><ul>
+   <li><span class="route_mark">'/kill_user'</span> - Deletes a user from the users dictionary.</li>
+   <li><span class="route_mark">'/kill_post'</span> - Deletes a post from the posts dictionary.</li>
+</ul></p><br>
+
+ </div>

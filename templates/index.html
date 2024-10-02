@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLASK_TEST homework</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+  <div class="top_row">
+  <h1>Тестируем  FLASK 
+  </h1>
+</div>
+
+  <div class="content">
+    {% include "description.html" %}
+  {% if users %}
+  <div class="users_list">
+    <div class="list_head">
+Users list
+    </div>
+    <ul class="users_items">
+      {% for user,id in users.items()  %}
+      <li class="user_item">
+        <span class="user_id">ID: {{id}}</span><span class="user_name">Name: {{user}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if posts %}
+  <div class="posts_list">
+    <div class="list_head">
+Posts list
+    </div>
+    <ul class="posts_items">
+      {% for id,post in posts.items()  %}
+      <li class="post_item">
+        <div class="post_head">
+        <span class="post_id">ID: {{id}} </span> 
+        <span class="post_date">Date: {{post.date}}</span>
+        <span class="user_name">Author: {{post.author}}</span>
+      </div>
+
+        <div class="post_text" > {{post.content}}</div>
+   
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+</body>
+</html>
